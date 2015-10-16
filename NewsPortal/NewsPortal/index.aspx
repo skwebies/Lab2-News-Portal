@@ -22,25 +22,47 @@
                     <h1><i class="fa fa-globe fa-2x"></i> News Portal</h1>
                 </div> -->
 
+                <!-- Main Menu -->
                 <nav>
                     <ul>
-                        <li><a href="index.html" class="selected">Home</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                        <li><a href="about.html">About</a></li>
+                        <li><a href="index.aspx" class="selected">Home</a></li>
+                        <li><a href="news.aspx">News</a></li>
+                        <li><a href="contact.aspx">Contact</a></li>
+                        <li><a href="about.aspx">About</a></li>
                     </ul>
                 </nav>
+                <!-- End of Main Menu -->
 
             </header>
 
+            <!-- Main Content -->
             <div id="content">
 
-                <h1>Welcome</h1>
+                <div id="newsportal">
+                    <h1>News Portal</h1>
+                </div>
+                
                 <hr />
 
+                <!-- Left Side Content -->
                 <div id="leftcontent">
+                    <h3>Home</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, mi nec consectetur hendrerit, urna nisi venenatis nunc, in laoreet libero nisl eu leo. 
+                        Etiam magna nulla, pharetra nec volutpat sollicitudin, tincidunt non dolor. Cras vehicula ultrices ex, eget mattis sem fringilla et. 
+                        Aliquam sollicitudin arcu vel metus mattis, vel ullamcorper metus vestibulum. Vivamus efficitur lectus dolor, eget suscipit est fringilla quis. 
+                        In eget urna facilisis dolor vehicula placerat. Proin non libero mattis, laoreet felis quis, luctus arcu.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vestibulum, mi nec consectetur hendrerit, urna nisi venenatis nunc, in laoreet libero nisl eu leo. 
+                        Etiam magna nulla, pharetra nec volutpat sollicitudin, tincidunt non dolor. Cras vehicula ultrices ex, eget mattis sem fringilla et. 
+                        Aliquam sollicitudin arcu vel metus mattis, vel ullamcorper metus vestibulum. Vivamus efficitur lectus dolor, eget suscipit est fringilla quis. 
+                        In eget urna facilisis dolor vehicula placerat. Proin non libero mattis, laoreet felis quis, luctus arcu.
+                    </p>
                 </div>
+                <!-- End of Left Side Content -->
 
+                <!-- Side bar -->
                 <div id="sidebar">
                     <h3>Categories</h3>
                     <hr /><br />
@@ -64,6 +86,7 @@
                         </ul>
                     
                         </div>
+                    <!-- End of Side Bar -->
         </div>
 
         </div>

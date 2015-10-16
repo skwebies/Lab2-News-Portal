@@ -9,6 +9,7 @@
     min-height: 100%;
     width: 1000px;
     margin: 0 auto;
+    box-shadow: 0 0 15px 1px black;
 }
 
 header {   
@@ -30,10 +31,11 @@ header {
     padding-bottom: 10px;
 }
 
+/* Main Menu */
 nav {
     float: right;
     padding-right: 50px;
-    padding-top: 243px;
+    padding-top: 244px;
     font-size: 20px;
 }
 
@@ -44,9 +46,9 @@ nav ul {
 nav ul li {
     display: inline-block;
     padding: 5px 10px 5px 10px;
-    border-top: 3px solid aqua;
-    border-left: 3px solid aqua;
-    border-right: 3px solid aqua;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: white;
@@ -68,6 +70,7 @@ nav ul li:hover {
 nav .selected {
     color: orange;
 } 
+/* End of Main Menu */
 
 #content {
     width: 1000px;
@@ -76,7 +79,13 @@ nav .selected {
     padding-top: 20px;
     background-color: white;
     text-align: center;
-    border-top: 2px solid aqua;
+    border-top: 2px solid black;
+}
+
+#newsportal {
+    text-align: left;
+    margin-left: 40px;
+    color: orange;
 }
 
 #leftcontent {
@@ -86,6 +95,8 @@ nav .selected {
     float: left;
     margin-left: 25px;
     margin-top: 20px;
+    text-align: left;
+    padding-left: 10px;
 }
 
 #categories {
@@ -98,7 +109,7 @@ nav .selected {
 }
 
 #sidebar {
-    width: 28%;
+    width: 27%;
     min-height: 600px;
     background-color: #f1f1f1;
     float: right;
