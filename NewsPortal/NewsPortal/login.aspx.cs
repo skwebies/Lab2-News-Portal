@@ -20,14 +20,6 @@ namespace NewsPortal
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            //if (FormsAuthentication.Authenticate(txtUser.Text, txtPassword.Text))
-            //{
-            //    FormsAuthentication.RedirectFromLoginPage(txtUser.Text, chkRemember.Checked);
-            //}
-            //else
-            //{
-            //    lblLoginMessage.Text = "Invalid User Name and/or Password";
-            //}
             Credential();
         }
 
@@ -38,12 +30,6 @@ namespace NewsPortal
                 LoginUsers = (List<User>)Session["InsertUser"];
             }
 
-            //if (LoginUsers.Count == 0)
-            //{
-            //    //alert message for the existing user
-            //    ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
-            //  "alert('You are not registered. Please click on register');", true);
-            //}
 
             int isUserExist = 0;
             for (int i = 0; i < LoginUsers.Count; i++)
@@ -57,7 +43,7 @@ namespace NewsPortal
             }
             if(isUserExist == 1)
             {
-                Response.Redirect("dashboard.aspx");
+                Response.Redirect("index.aspx");
             }
         }
     }
