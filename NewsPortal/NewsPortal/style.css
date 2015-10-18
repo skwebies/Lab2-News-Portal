@@ -1,2 +1,129 @@
 ﻿body {
+    background: #f1f1f1;
+    font-family: 'source-sans-pro',sans-serif;
+    font-size: 13px;
+}
+
+.container {
+    width: 960px;
+    /*background:white;*/
+    margin: 0 auto;
+    min-height: 600px;
+    
+}
+
+#logo {
+    width:280px;
+    margin:0 auto;
+    text-align:center;
+    margin-top:80px;
+}
+h1 {
+    font-size:36px;
+    font-family: 'Exo', sans-serif;
+    font-weight:bold;
+    
+}
+
+#logo .news {
+    font-family: 'Exo', sans-serif;
+    color:#00b9ff;
+    line-height:70px;
+}
+#logo .portal {
+    font-family: 'Exo', sans-serif;
+    color:#ff6a00;
+}
+.logoIcon {
+    position:relative;
+    top:10px;
+}
+
+#login {
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    font-size: 14px;
+    background: white;
+    padding: 20px;
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border: solid 1px #00b9ff;
+}
+
+.fa {
+    padding-right:8px;
+}
+
+.loginSets {
+    margin: 0 auto;
+    display: block;
+    width: 200px;
+    font-family: 'source-sans-pro',sans-serif;
+}
+
+#login input {
+    margin-bottom: 10px;
+    margin-top: 6px;
+}
+#login span#lblUser,#login span#lblPassword {
+    margin-left:25px;
+}
+#login input#txtUser {
+    margin-left:3px;
+}
+
+#login span {
+    color: #00b9ff;
+    font-family: 'source-sans-pro',sans-serif;
+    font-weight: 600;
+}
+#btnLogin {
+    display:block;
+   position:relative;
+   left:125px;
+    
+}
+#lbtnRegister {
+    color: #00b9ff;
+    text-decoration:none;
+}
+p.LoginP{
+    width:280px;
+
+}
+
+/*Register Page Styles*/
+.register {
+    margin: 0 auto;
+    width: 300px;
+    position: relative;
+    top: 30px;
+    font-size: 14px;
+    background: white;
+    padding: 20px;
+    box-shadow: inset 0 0 2px 2px rgba(0,0,0,0.4);
+    border-radius: 10px;
+    border: solid 1px #00b9ff;
+}
+.PageTitles {
+    display:block;
+    margin:0 auto;
+    width:280px;
+    font-family: 'source-sans-pro',sans-serif;
+    font-weight:300;
+    color:#ff6a00;
+    text-align:center;
+    
+}
+.PageTitles h2 {
+    text-transform:uppercase;
+}
+#txtFirstName, #txtLastName, #txtEmail, #txtAddPassword {
+    margin:8px 0;
+}
+#lbtnLogin {
+    text-decoration:none;
+    color: #00b9ff;
 }
