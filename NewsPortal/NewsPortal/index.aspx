@@ -38,10 +38,7 @@
                 <h2>Welcome to News Portal</h2>
                 <div class="main_content">
                     <asp:Repeater ID="Repeater1" runat="server">
-                        <img src="" />
-                        <p>
-
-                        </p>
+                    
 
                     </asp:Repeater>
                     

@@ -35,10 +35,10 @@
 
             <article class="post">
                 <div id="Content_Post">
-                    <input id="Title" type="text" placeholder="Enter a title for the article" size="99" /><br />
-                    <textarea id="Content" cols="100" rows="20"></textarea><br />
-                    <input id="img_upload" type="file" value="image" /><br />
-                    <input id="post_news" type="submit" value="Post" />
+                    <asp:TextBox ID="news_title" runat="server" Columns="100"></asp:TextBox><br />
+                    <textarea id="content_area" cols="100" rows="10" required="required" aria-expanded="false"></textarea><br />
+                    <asp:FileUpload ID="ImgUpload" runat="server" />
+                    <asp:DropDownList ID="DropCat" runat="server" ></asp:DropDownList>
                 </div>
             </article>
 

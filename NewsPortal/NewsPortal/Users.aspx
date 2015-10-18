@@ -24,6 +24,9 @@
                             
                         </li>
                         <li>
+                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx">Articles</asp:LinkButton>
+                        </li>
+                        <li>
                             <asp:LinkButton ID="lbtnUsersPage" runat="server" CssClass="selected" PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
                             
                            
