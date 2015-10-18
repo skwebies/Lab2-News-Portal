@@ -21,17 +21,27 @@
                 <nav>
                     <ul>
                         <li>
-                            <asp:LinkButton ID="lbtnDash" runat="server" PostBackUrl="~/dashboard.aspx" CssClass="selected">Dashboard</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnDash" runat="server" PostBackUrl="~/dashboard.aspx">Dashboard</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx" >Articles</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx" CssClass="selected">Articles</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnUsersPage" runat="server"  PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnUsersPage" runat="server" PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
                         </li>
                     </ul>
                 </nav>
             </header>
+
+            <article class="post">
+                <div id="Content_Post">
+                    <input id="Title" type="text" placeholder="Enter a title for the article" size="99" /><br />
+                    <textarea id="Content" cols="100" rows="20"></textarea><br />
+                    <input id="img_upload" type="file" value="image" /><br />
+                    <input id="post_news" type="submit" value="Post" />
+                </div>
+            </article>
+
         </div>
     </form>
 </body>

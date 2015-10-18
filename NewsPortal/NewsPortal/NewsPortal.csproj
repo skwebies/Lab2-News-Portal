@@ -67,6 +67,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="admin.css" />
+    <Content Include="articles.aspx" />
+    <Content Include="Assets\globe.jpg" />
     <Content Include="dashboard.aspx" />
     <Content Include="packages.config" />
     <Content Include="Registration\Web.config">
@@ -100,6 +102,13 @@
     </Compile>
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="articles.aspx.cs">
+      <DependentUpon>articles.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="articles.aspx.designer.cs">
+      <DependentUpon>articles.aspx</DependentUpon>
     </Compile>
     <Compile Include="contact.aspx.cs">
       <DependentUpon>contact.aspx</DependentUpon>
@@ -157,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Assets\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
