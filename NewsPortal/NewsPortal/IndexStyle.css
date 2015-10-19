@@ -1,0 +1,207 @@
+﻿body {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #f1f1f1;
+    font-family: Ubuntu;
+}
+
+#toplogo {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: -50px;
+}
+
+#mainmenu {
+    position: fixed;
+    width: 100%;
+    height: 30px;
+    background-color: white;
+    padding-bottom: 20px;
+    top: 0;
+    text-align: right;
+    font-size: 18px;
+    border-bottom: 1px solid black;
+    z-index: 10;
+}
+
+#mainmenu ul {
+    margin-right: 280px;
+}
+
+#mainmenu ul li {
+    display: inline-block;
+    padding-right: 10px;
+}
+
+#mainmenu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.dashboard {
+    color: #00b9ff;
+}
+
+#mainmenu ul li:hover {
+    text-decoration: underline;
+}
+
+.container {
+    min-height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    box-shadow: 0 0 15px 1px black;
+    margin-top: 90px;
+}
+
+header {   
+    width: 1000px;
+    height: 300px;
+    padding-top: 50px;
+    text-align: center;
+    background-image:url(Assets/sunset.jpg);
+    background-position: center;
+    
+}
+
+#logo {
+    float: left;
+    width: 400px;
+    height: 60px;
+    margin-left: 20px;
+    color: orange;
+    padding-bottom: 10px;
+}
+
+/* Main Menu */
+nav {
+    float: right;
+    padding-right: 50px;
+    padding-top: 244px;
+    font-size: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: white;
+}
+
+nav ul li a, visited {
+    text-decoration: none;
+    color: #ff6a00;
+}
+
+nav ul li:hover ul {
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: #f1f1f1;
+}
+
+nav .selected {
+    color: #00b9ff;
+} 
+/* End of Main Menu */
+
+#content {
+    width: 1000px;
+    min-height:730px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: white;
+    text-align: center;
+    border-top: 2px solid black;
+}
+
+.newsmenu {
+    padding-bottom: 10px;
+    padding-top: 10px;
+    width: 900px;
+    background-color: red;
+    margin: 0 auto;
+}
+
+.newsmenu ul {
+
+}
+
+.newsmenu ul li {
+    display: inline;
+}
+
+.newsmenu ul li a {
+    width: 100px;
+}
+
+.newsportal {
+    text-align: left;
+    margin-left: 40px;
+    color: black;
+}
+
+.news {
+    color:#00b9ff; 
+}
+
+.portal {
+    color:#ff6a00;
+}
+
+.logoIcon {
+    position:relative;
+    padding-right: 8px;
+    top: 10px;
+}
+
+#leftcontent {
+    width: 65%;
+    min-height: 600px;
+    background-color: #f1f1f1;
+    float: left;
+    margin-left: 25px;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+#categories {
+    float: left;
+    margin-left: 25px;
+}
+
+#categories ul li {
+    text-align: left;
+}
+
+#sidebar {
+    width: 27%;
+    min-height: 600px;
+    background-color: #f1f1f1;
+    float: right;
+    margin-right: 25px;
+    margin-top: 20px;
+}
+
+hr {
+    width: auto;
+    margin: 0 25px; /* This leaves 10px margin on left and right. If only right margin is needed try margin-right: 10px; */
+}
+
+footer {
+    position:absolute;
+    width:960px;
+    height:50px;
+    padding-top: 25px;
+    text-align: center;
+}

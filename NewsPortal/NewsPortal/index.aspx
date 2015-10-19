@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="IndexStyle.css" />
     <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
     <title>News Portal</title>
@@ -21,6 +21,10 @@
                     <a href="login.aspx"><span class="portal">Log out</span></a>
                 </li>
             </ul>
+        </div>
+
+        <div id="toplogo">
+            <h1 class="news"><i class="fa fa-2x fa-globe logoIcon" style="color: #ff6a00;"></i>News <span class="portal">Portal</span></h1>
         </div>
 
         <div class="container">
@@ -48,10 +52,21 @@
             <!-- Main Content -->
             <div id="content">
 
-                <div id="newsportal">
-                    <h1 class="news"><i class="fa fa-2x fa-globe logoIcon" style="color: #ff6a00;"></i>News <span class="portal">Portal</span></h1>
-                </div>
-                
+                <!--
+                <div class="newsmenu">
+                <ul>
+                    <li>
+                        Today's top news
+                    </li>
+                    <li>
+                        <a href="">Kyrka misstänks vara fasad för miljonbedrägerier</a>
+                    </li>
+                    <li>
+                        <a href="">Ny plan för att fördela flyktingar på EU-länder</a>
+                    </li>
+                </ul>
+                </div> -->
+
                 <hr />
 
                 <!-- Left Side Content -->
