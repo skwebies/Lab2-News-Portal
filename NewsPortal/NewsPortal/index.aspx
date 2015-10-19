@@ -12,6 +12,16 @@
 <body>
     <form id="frmHome" runat="server">
 
+        <div id="mainmenu">
+            <ul>
+                <li>
+                    <a href="dashboard.aspx"><span class="dashboard">Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="login.aspx"><span class="portal">Log out</span></a>
+                </li>
+            </ul>
+        </div>
 
         <div class="container">
             <header>
@@ -39,7 +49,7 @@
             <div id="content">
 
                 <div id="newsportal">
-                    <h1>News Portal</h1>
+                    <h1 class="news"><i class="fa fa-2x fa-globe logoIcon" style="color: #ff6a00;"></i>News <span class="portal">Portal</span></h1>
                 </div>
                 
                 <hr />
