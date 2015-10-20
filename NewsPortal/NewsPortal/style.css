@@ -57,9 +57,9 @@ h1 {
 }
 
 .loginSets {
-    margin: 0 auto;
+    margin: 0 auto 0 20px;
     display: block;
-    width: 200px;
+    width: 245px;
     font-family: 'source-sans-pro',sans-serif;
 }
 

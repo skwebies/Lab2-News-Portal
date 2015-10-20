@@ -16,5 +16,20 @@ namespace NewsPortal
                 Session["InsertUser"] = new List<User>();
             }
         }
+
+        protected void lbtnArticles_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("articles.aspx");
+        }
+
+        protected void lbtnUsersPage_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Users.aspx");
+        }
+
+        protected void lbtnDash_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("dashboard.aspx");
+        }
     }
 }

@@ -37,11 +37,26 @@
             <section class="contents">
                 <h2>Welcome to News Portal</h2>
                 <div class="main_content">
-                    <asp:Repeater ID="Repeater1" runat="server">
                     
+                         
+                    <asp:Repeater ID="rptHomeContent" runat="server">
+                       <ItemTemplate>
+                            <div id="PostArticles">
+                                
+                                   <h2 style="width:650px; clear:left; color:#0094ff;"><%# DataBinder.Eval(Container.DataItem, "AddTitle") %></h2>
+                                    <h3 style="color:#ff6a00;"><span style="color:grey">Category:</span> <%# DataBinder.Eval(Container.DataItem, "AddCategory") %>     <span style="color:grey;">Published On </span><%# DataBinder.Eval(Container.DataItem, "postDate") %></h3>
+                                   <p style="text-align:justify;"><img src="Assets/<%# DataBinder.Eval(Container.DataItem, "AddMedia") %>" width="150" style = "float:left; margin-bottom:10px; margin-right:10px;" />
+                                   <%# DataBinder.Eval(Container.DataItem, "AddArticle") %></p>
+                                    
+                                    
+                                </div>
 
+                                
+                           
+                       </ItemTemplate>
                     </asp:Repeater>
-                    
+                             
+                   
                 </div>
                 <aside class="sidebar_left">
 

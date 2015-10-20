@@ -11,6 +11,7 @@ namespace NewsPortal
 
     public partial class register : System.Web.UI.Page
     {
+        public bool UseSystemPasswordChar { get; set; }
         private List<User> ListUsers;
 
         protected void Page_Load(object sender, EventArgs e)
@@ -94,9 +95,17 @@ namespace NewsPortal
 
         }
 
+        protected void btnReset_Click(object sender, EventArgs e)
+        {
+            txtFirstName.Text = string.Empty;
+            txtLastName.Text = string.Empty;
+            txtEmail.Text = string.Empty;
+            txtAddPassword.Text = string.Empty;
+            txtFirstName.Focus();
+        }
+
 
     }
-
     public class User
     {
         public string FirstName { get; private set; }

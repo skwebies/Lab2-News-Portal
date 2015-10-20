@@ -20,14 +20,14 @@
                 <nav>
                     <ul>
                         <li>
-                            <asp:LinkButton ID="lbtnDash" runat="server" PostBackUrl="~/dashboard.aspx">Dashboard</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnDash" runat="server" OnClick="lbtnDash_Click" >Dashboard</asp:LinkButton>
                             
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx">Articles</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnArticles" runat="server" OnClick="lbtnArticles_Click" >Articles</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnUsersPage" runat="server" CssClass="selected" PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnUsersPage" runat="server" CssClass="selected" OnClick="lbtnUsersPage_Click" >Users</asp:LinkButton>
                             
                            
                         </li>
@@ -59,8 +59,8 @@
                                 <td>
                                     <asp:Label ID="lblUserEmail" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Email") %>'></asp:Label>
                                 </td>
-                                <td>
-                                    <asp:Label ID="lblUserPass" runat="server"  Text='<%# DataBinder.Eval(Container.DataItem, "Password") %>'></asp:Label>
+                                <td class="hidePass">
+                                    <asp:Label ID="lblUserPass" runat="server" Visible="false"   Text='<%# DataBinder.Eval(Container.DataItem, "Password") %>'></asp:Label>
                                 </td>
 
 

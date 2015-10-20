@@ -26,13 +26,25 @@
                 </div>
                 <div class="loginSets">
                     <asp:Label ID="lblFirstName" runat="server" Text="First Name:"></asp:Label><br />
-                    <asp:TextBox ID="txtFirstName" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txtFirstName" runat="server" TextMode="SingleLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvFirstName" runat="server" ErrorMessage="*Required" ForeColor="Red" ControlToValidate="txtFirstName" Display="Dynamic"></asp:RequiredFieldValidator>
+                    
+                    <br />
                     <asp:Label ID="lblLastName" runat="server" Text="Last Name:"></asp:Label><br />
-                    <asp:TextBox ID="txtLastName" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txtLastName" runat="server" TextMode="SingleLine"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvLastName" runat="server" ErrorMessage="*Required" ForeColor="Red" ControlToValidate="txtLastName" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                    <br />
                     <asp:Label ID="lblEmail" runat="server" Text="Email:"></asp:Label><br />
-                    <asp:TextBox ID="txtEmail" runat="server"></asp:TextBox><br />
+                    <asp:TextBox ID="txtEmail" runat="server" TextMode="Email"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvEmail" runat="server" ErrorMessage="*Required" ForeColor="Red" ControlToValidate="txtEmail" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                    <br />
                     <asp:Label ID="lblAddPassword" runat="server" Text="Password"></asp:Label><br />
-                    <asp:TextBox ID="txtAddPassword" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="txtAddPassword" runat="server" TextMode="Password"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="rfvPassword" runat="server" ErrorMessage="*Required" ForeColor="Red" ControlToValidate="txtAddPassword" Display="Dynamic"></asp:RequiredFieldValidator>
+
+                    <br />
                     <asp:Button ID="btnRegister" runat="server" Text="Register" OnClick="btnRegister_Click" />
                     <asp:Button ID="btnReset" runat="server" Text="Reset"  />
                     <p class="LoginP">Already have an account?

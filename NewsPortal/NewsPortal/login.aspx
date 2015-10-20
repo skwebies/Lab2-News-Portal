@@ -28,10 +28,10 @@
                 <div class="loginSets">
                     <asp:Label ID="lblUser" CssClass="lblUser" runat="server" Text="User Name: "></asp:Label><br />
                     <i class="fa fa-user"></i>
-                    <asp:TextBox ID="txtUser" runat="server" placeholder="Username"></asp:TextBox><br />
+                    <asp:TextBox ID="txtUser" runat="server" placeholder="Username" TextMode="Email"></asp:TextBox><br />
                     <asp:Label ID="lblPassword" runat="server" CssClass="lblPassword" Text="Password"></asp:Label><br />
                     <i class="fa  fa-key"></i>
-                    <asp:TextBox ID="txtPassword" runat="server" placeholder="Password"></asp:TextBox><br />
+                    <asp:TextBox ID="txtPassword" runat="server" placeholder="Password" TextMode="Password"></asp:TextBox><br />
                      <p style="text-align:center; margin-top:-10px; font-size:small;"><asp:CheckBox ID="chkRemember" runat="server" Text="Remember Me" TextAlign="Right" /></p>
                     <asp:Button ID="btnLogin" runat="server" Text="Login" OnClick="btnLogin_Click"/>
                     <p class="LoginP">Don't have account yet?

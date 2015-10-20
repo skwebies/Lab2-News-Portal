@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="dashboard.aspx.cs" Inherits="NewsPortal.dashboard" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="articles.aspx.cs" Inherits="NewsPortal.articles" %>
 
 <!DOCTYPE html>
 
@@ -21,28 +21,68 @@
                 <nav>
                     <ul>
                         <li>
-                            <asp:LinkButton ID="lbtnDash" runat="server" PostBackUrl="~/dashboard.aspx">Dashboard</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnDash" runat="server" OnClick="lbtnDash_Click" >Dashboard</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx" CssClass="selected">Articles</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnArticles" runat="server" CssClass="selected" OnClick="lbtnArticles_Click">Articles</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnUsersPage" runat="server" PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnUsersPage" runat="server" OnClick="lbtnUsersPage_Click"  >Users</asp:LinkButton>
                         </li>
                     </ul>
                 </nav>
             </header>
 
-            <article class="post">
+            <div class="post">
                 <div id="Content_Post">
-                    <asp:TextBox ID="news_title" runat="server" Columns="100"></asp:TextBox><br />
-                    <textarea id="content_area" cols="100" rows="10" required="required" aria-expanded="false"></textarea><br />
-                    <asp:FileUpload ID="ImgUpload" runat="server" />
-                    <asp:DropDownList ID="DropCat" runat="server" ></asp:DropDownList>
-                </div>
-            </article>
+                    <asp:Label ID="lblArtticleTitle" runat="server" Text="Title: "></asp:Label>
+                    <asp:TextBox ID="txtTitle" runat="server"></asp:TextBox><br />
+                    <asp:FileUpload ID="fpImage" runat="server" ToolTip="Content Image" /><br />
+                    <asp:TextBox ID="txtContent" runat="server" TextMode="MultiLine" Columns="100" Rows="10"></asp:TextBox><br />
+                    
+                    <asp:DropDownList ID="ddlCategory" runat="server">
+                        <asp:ListItem Enabled="False" Selected="True">Select Category</asp:ListItem>
+                        <asp:ListItem>News</asp:ListItem>
+                        <asp:ListItem>Entertaintment</asp:ListItem>
+                    </asp:DropDownList>
+                    <asp:Button ID="btbPost" runat="server" Text="Post Article" OnClick="btbPost_Click" />
 
-        </div>
+
+                </div>
+                <div class="DisplayContent">
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Title</td>
+                                <td>Category</td>
+                                <td>Content</td>
+                                <td>Image</td>
+                                <td>Published On</td>
+                            </tr>
+                        </thead>
+                    <asp:Repeater ID="rptArticle" runat="server">
+                        <ItemTemplate>
+                            <tbody>
+                                <tr runat="server">
+                                    <td><asp:Label ID="lblTitle" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "AddTitle") %>'></asp:Label></td>
+                                    <td><asp:Label ID="lblCategory" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "AddCategory") %>'></asp:Label></td>
+                                    <td><asp:Label ID="lblArticle" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "AddArticle") %>'></asp:Label></td>
+                                    <td><img src="Assets/<%# DataBinder.Eval(Container.DataItem, "AddMedia") %>" width="50" /></td>
+                                    <td><asp:Label ID="postDate" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "postDate") %>'></asp:Label></td>
+                                    
+
+
+                                </tr>
+                            </tbody>
+                        </ItemTemplate>
+
+
+                    </asp:Repeater>
+                    </table>
+                </div>
+            </div>
+
+        </div><!--end of AdminContainer-->
     </form>
 </body>
 </html>

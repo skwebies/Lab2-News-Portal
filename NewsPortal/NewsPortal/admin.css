@@ -95,9 +95,7 @@ padding:10px;
 
 table {
     margin-top:30px;
-    
     margin:0 auto;
-    background:#cbebff;
     font-family:'source-sans-pro',sans-serif;
     width:100%;
 }
@@ -137,10 +135,28 @@ tbody tr td {
 /*Article Page styles*/
 #Content_Post {
 margin:50px;
+float:left;
+
 }
-#Content_Post input {
+#Content_Post input,#lblArticleTitle {
     margin-bottom:20px;
 }
 #post_news {
     margin-left:300px;
+}
+.news_image {
+    max-width:150px;
+}
+
+.DisplayContent {
+    margin:50px;
+    float:right;
+    width:700px;
+}
+.DisplayContent table {
+    width:100%;
+}
+
+#rptUserList_lblUserPass {
+    display:none;
 }

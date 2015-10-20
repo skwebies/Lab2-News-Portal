@@ -21,13 +21,13 @@
                 <nav>
                     <ul>
                         <li>
-                            <asp:LinkButton ID="lbtnDash" runat="server" PostBackUrl="~/dashboard.aspx" CssClass="selected">Dashboard</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnDash" runat="server" OnClick="lbtnDash_Click" CssClass="selected">Dashboard</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnArticles" runat="server" PostBackUrl="~/articles.aspx" >Articles</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnArticles" runat="server" OnClick="lbtnArticles_Click" >Articles</asp:LinkButton>
                         </li>
                         <li>
-                            <asp:LinkButton ID="lbtnUsersPage" runat="server"  PostBackUrl="~/Users.aspx">Users</asp:LinkButton>
+                            <asp:LinkButton ID="lbtnUsersPage" runat="server" OnClick="lbtnUsersPage_Click"  >Users</asp:LinkButton>
                         </li>
                     </ul>
                 </nav>
