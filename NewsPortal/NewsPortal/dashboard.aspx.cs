@@ -11,10 +11,10 @@ namespace NewsPortal
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Page.IsPostBack)
-            {
-                Session["InsertUser"] = new List<User>();
-            }
+            //if (Page.IsPostBack)
+            //{
+            //    Session["InsertUser"] = new List<User>();
+            //}
         }
 
         protected void lbtnArticles_Click(object sender, EventArgs e)

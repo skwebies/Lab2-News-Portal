@@ -59,8 +59,12 @@
                                 <td>
                                     <asp:Label ID="lblUserEmail" runat="server" Text='<%# DataBinder.Eval(Container.DataItem, "Email") %>'></asp:Label>
                                 </td>
-                                <td class="hidePass">
-                                    <asp:Label ID="lblUserPass" runat="server" Visible="false"   Text='<%# DataBinder.Eval(Container.DataItem, "Password") %>'></asp:Label>
+                                <td class="hidePass" style="display:none;">
+                                    <asp:Label ID="lblUserPass" runat="server"  Visible="false"   Text='<%# DataBinder.Eval(Container.DataItem, "Password") %>'></asp:Label>
+                                </td>
+                                <td>
+                                    <asp:Label ID="lblPassHide"  runat="server" Text="*******" OnLoad="lblPassHide_Load"></asp:Label>
+
                                 </td>
 
 

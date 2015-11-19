@@ -91,6 +91,7 @@
     <Content Include="Registration\register.aspx" />
     <Content Include="style.css" />
     <Content Include="Users.aspx" />
+    <Content Include="users.txt" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
     </Content>

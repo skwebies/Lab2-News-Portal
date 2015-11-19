@@ -2,26 +2,27 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Script.Serialization;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using System.IO;
+using System.Text;
 
 namespace NewsPortal
 {
 
     public partial class register : System.Web.UI.Page
     {
-        public bool UseSystemPasswordChar { get; set; }
+
         private List<User> ListUsers;
+        string path = @"C:\Users\Thines\Source\Repos\Lab2-News-Portal\NewsPortal\NewsPortal\users.txt";
 
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!Page.IsPostBack)
             {
-                //if (ListUsers == null)
-                //{
                 Session["InsertUser"] = new List<User>();
-                //}
 
             }
 
@@ -30,6 +31,8 @@ namespace NewsPortal
 
         private void AddUsers()
         {
+
+
             if (Session["InsertUser"] != null)
             {
                 ListUsers = (List<User>)Session["InsertUser"];
@@ -48,25 +51,59 @@ namespace NewsPortal
                     isAvailable = 1;
                 }
 
+
             }
+
             if (isAvailable == 1)
             {
                 //alert message for the existing user
                 ScriptManager.RegisterStartupScript(this, GetType(), "alertMessage",
               "alert('Username Already Exist!. Please Login');", true);
             }
+
             else
             {
 
                 ListUsers.Add(new User(txtFirstName.Text, txtLastName.Text, txtEmail.Text, txtAddPassword.Text));
+
+
+
+
+                //foreach (User item in ListUsers)
+                //{
+                //    var serializer = new JavaScriptSerializer();
+                //    var serializedResult = serializer.Serialize(item);
+
+
+
+                //    File.WriteAllText(@"C:\Users\Thines\Source\Repos\Lab2-News-Portal\NewsPortal\NewsPortal\users.txt", serializedResult);
+                //    //File.AppendText(@"C:\Users\Thines\Source\Repos\Lab2-News-Portal\NewsPortal\NewsPortal\users.txt",true);
+                //    //File.AppendAllLines(@"C:\Users\Thines\Source\Repos\Lab2-News-Portal\NewsPortal\NewsPortal\users.txt");
+                //}
+
+                StreamWriter file = new StreamWriter(path, true);
+
+                //file.WriteLine(txtFirstName.Text + " " + txtLastName.Text);
+                //file.Close();
+
+                foreach (User item in ListUsers)
+                {
+                    file.WriteLine(item.FirstName + " " + item.LastName + " " + item.Email + " " + item.Password);
+                    file.Close();
+                }
+
+                //StreamReader db = new StreamReader(@"C:\Users\Thines\Source\Repos\Lab2-News-Portal\NewsPortal\NewsPortal\users.txt");
+
 
             }
 
             Session["InsertUser"] = ListUsers;
 
 
-
         }
+
+
+
 
         //private void UserBinding()
         //{
@@ -105,6 +142,8 @@ namespace NewsPortal
         }
 
 
+
+
     }
     public class User
     {
@@ -123,3 +162,22 @@ namespace NewsPortal
         }
     }
 }
+
+//namespace JsonWriterMethod
+//{
+//    public static class JSONHelper
+//    {
+//        public static string ToJSON(this object obj)
+//        {
+//            JavaScriptSerializer serializer = new JavaScriptSerializer();
+//            return serializer.Serialize(obj);
+//        }
+
+//        public static string ToJSON(this object obj, int recursionDepth)
+//        {
+//            JavaScriptSerializer serializer = new JavaScriptSerializer();
+//            serializer.RecursionLimit = recursionDepth;
+//            return serializer.Serialize(obj);
+//        }
+//    }
+//}

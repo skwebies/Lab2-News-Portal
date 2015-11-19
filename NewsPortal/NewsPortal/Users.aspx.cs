@@ -10,22 +10,27 @@ namespace NewsPortal
 {
     public partial class Users : System.Web.UI.Page
     {
-        private List<User> ListUsers;
+        public List<User> ListUsers;
         
         protected void Page_Load(object sender, EventArgs e)
-        {
+        { 
             if (Session["InsertUser"] != null)
             {
                 ListUsers = (List<User>)Session["InsertUser"];
+               
+                
             }
+
             UserBinding();
         }
 
         private void UserBinding()
         {
-            //Repeater rptUserList = (Repeater)FindControl("rptUserList");
-            rptUserList.DataSource = ListUsers;
-            rptUserList.DataBind();
+           
+                rptUserList.DataSource = ListUsers;
+                rptUserList.DataBind();
+            
+            
             
         }
 
@@ -41,7 +46,14 @@ namespace NewsPortal
 
         protected void lbtnUsersPage_Click(object sender, EventArgs e)
         {
+            
             Response.Redirect("Users.aspx");
+        }
+
+        protected void lblPassHide_Load(object sender, EventArgs e)
+        {
+            
+            Visible = true;
         }
 
         //protected void rptUserList_ItemDataBound(object sender, RepeaterItemEventArgs e)

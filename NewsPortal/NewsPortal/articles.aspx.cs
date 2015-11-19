@@ -17,8 +17,7 @@ namespace NewsPortal
             if(!Page.IsPostBack)
             {
                 Session["AddNews"] = new List<Article>();
-            }
-            
+            } 
         }
 
         private void AddContents()
@@ -38,6 +37,7 @@ namespace NewsPortal
                 string fileName = Path.Combine(Server.MapPath("~/Assets"), fpImage.FileName);
                 //save the file to our local path
                 fpImage.SaveAs(fileName);
+                
             }
 
            
@@ -45,7 +45,7 @@ namespace NewsPortal
             DateTime postDate = DateTime.Now;
         
 
-        addArticles.Add(new Article(txtTitle.Text, ddlCategory.SelectedItem.Text, txtContent.Text, fpImage.PostedFile.FileName, postDate));
+            addArticles.Add(new Article(txtTitle.Text, ddlCategory.SelectedItem.Text, txtContent.Text, fpImage.PostedFile.FileName, postDate));
 
 
             Session["AddNews"] = addArticles;

@@ -15,10 +15,19 @@
 <body>
     <form id="frmHome" runat="server">
         <div class="container">
+             <div class="userLogged" style="float:right; width:250px;">
+             <asp:Repeater ID="rptLoggedUser" runat="server">
+                 <ItemTemplate>
+                <span class="UserLoggedText" style="color:#0564a8">Logged in as: </span><asp:Label ID="lblLoggedIn"  ForeColor="#993300" runat="server"  Text='<%# DataBinder.Eval(Container.DataItem,"FirstName" )%>'></asp:Label>
+              </ItemTemplate> 
+            </asp:Repeater>
+                </div>
             <div id="logo_home">
 
                 <h1 class="news"><i class="fa fa-2x fa-globe logoIcon" style="color: #ff6a00;"></i>News <span class="portal">Portal</span></h1>
             </div><!--end of logo-->
+
+           
             <nav>
                 <ul>
                     <li><a href="index.aspx" class="selected">Home</a></li>

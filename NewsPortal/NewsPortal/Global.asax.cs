@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.Specialized;
 using System.Linq;
 using System.Web;
 using System.Web.Security;
@@ -11,6 +12,11 @@ namespace NewsPortal
     {
         protected void Application_Start(object sender, EventArgs e)
         {
+            
         }
+
+        
+        
+
     }
 }

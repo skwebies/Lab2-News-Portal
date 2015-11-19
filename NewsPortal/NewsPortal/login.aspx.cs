@@ -14,13 +14,19 @@ namespace NewsPortal
         private List<User> LoginUsers;
         protected void Page_Load(object sender, EventArgs e)
         {
-         
+            if (Session["InsertUser"] != null)
+            {
+                LoginUsers = (List<User>)Session["InsertUser"];
+                //rptUserList.DataSource = (List<User>)Session["InsertUser"];
+                //Session["InsertUser"] = ListUsers;
+            }
 
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             Credential();
+            
         }
 
         private void Credential()
@@ -32,20 +38,43 @@ namespace NewsPortal
 
 
             int isUserExist = 0;
+            //int UserLogged = 0;
             for (int i = 0; i < LoginUsers.Count; i++)
             {
                 if (LoginUsers[i].Email == txtUser.Text && LoginUsers[i].Password == txtPassword.Text)
                 {
                     isUserExist = 1;
+                    //UserLogged = 1;
                 }
+                //if (UserLogged == 1)
+                //{
+                //    displayLoggedUser(); 
+                //}
 
-         
+
             }
             if(isUserExist == 1)
             {
                 Response.Redirect("index.aspx");
+               
+                
             }
+            
+            
+            
         }
+        //private void displayLoggedUser()
+        //{
+        //    if (Session["InsertUser"] != null)
+        //    {
+        //        LoginUsers = (List<User>)Session["InsertUser"];
+        //    }
+        //    Label lblLoggedIn = (Label)FindControl("lblLoggedIn");
+        //    Repeater rptLoggedUser = (Repeater)FindControl("rptLoggedUser");
+        //    rptLoggedUser.DataSource = LoginUsers;
+        //    rptLoggedUser.DataBind();
+        //}
+        
     }
 
 

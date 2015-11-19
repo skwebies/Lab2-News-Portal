@@ -11,9 +11,23 @@ namespace NewsPortal
     public partial class index : System.Web.UI.Page
     {
         public List<Article> addArticles;
+        public List<User> ListUsers;
 
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+            if (Session["InsertUser"] != null)
+            {
+                
+                ListUsers = (List<User>)Session["InsertUser"];
+                
+                rptLoggedUser.DataSource = ListUsers;
+                rptLoggedUser.DataBind();
+
+                
+                
+            }
+
             if (Session["AddNews"] != null)
             {
                 addArticles = (List<Article>)Session["AddNews"];
@@ -26,6 +40,20 @@ namespace NewsPortal
         {
             DateTime postDate = DateTime.Now;
         }
+
+        //private void LoggedUser()
+        //{
+        //    if (Session["InsertUser"] != null)
+        //    {
+        //        ListUsers = (List<User>)Session["InsertUser"];
+        //    }
+        //    int loggedIn = 0;
+        //    if()
+
+
+        //    Label lblLoggedIn = (Label)FindControl("lblLoggedIn");
+        //    lblLoggedIn.DataBind();
+        //}
 
         private void HomeContentBinding()
         {
