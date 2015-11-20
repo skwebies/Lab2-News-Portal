@@ -10,7 +10,7 @@
 namespace NewsPortal {
     
     
-    public partial class registation {
+    public partial class contactus {
         
         /// <summary>
         /// form1 control.
@@ -22,13 +22,13 @@ namespace NewsPortal {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// TextBoxUN control.
+        /// txtName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxUN;
+        protected global::System.Web.UI.WebControls.TextBox txtName;
         
         /// <summary>
         /// RequiredFieldValidator1 control.
@@ -40,13 +40,13 @@ namespace NewsPortal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
         
         /// <summary>
-        /// TextBoxEmail control.
+        /// txtEmail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxEmail;
+        protected global::System.Web.UI.WebControls.TextBox txtEmail;
         
         /// <summary>
         /// RequiredFieldValidator2 control.
@@ -67,13 +67,13 @@ namespace NewsPortal {
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
         
         /// <summary>
-        /// TextBoxPass control.
+        /// txtSubject control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxPass;
+        protected global::System.Web.UI.WebControls.TextBox txtSubject;
         
         /// <summary>
         /// RequiredFieldValidator3 control.
@@ -85,13 +85,13 @@ namespace NewsPortal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
-        /// TextBoxRpass control.
+        /// txtMessage control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBoxRpass;
+        protected global::System.Web.UI.WebControls.TextBox txtMessage;
         
         /// <summary>
         /// RequiredFieldValidator4 control.
@@ -103,31 +103,22 @@ namespace NewsPortal {
         protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
         
         /// <summary>
-        /// CompareValidator1 control.
+        /// ValidationSummary1 control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CompareValidator CompareValidator1;
+        protected global::System.Web.UI.WebControls.ValidationSummary ValidationSummary1;
         
         /// <summary>
-        /// DropDownListCountry control.
+        /// Labell control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownListCountry;
-        
-        /// <summary>
-        /// RequiredFieldValidator5 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        protected global::System.Web.UI.WebControls.Label Labell;
         
         /// <summary>
         /// Button1 control.

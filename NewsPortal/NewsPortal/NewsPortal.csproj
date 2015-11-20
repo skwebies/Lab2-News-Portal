@@ -66,6 +66,11 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Registation.mdf" />
+    <Content Include="App_Data\Registation_log.ldf">
+      <DependentUpon>Registation.mdf</DependentUpon>
+    </Content>
+    <Content Include="contactus.aspx" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -104,6 +109,13 @@
       <DependentUpon>contact.aspx</DependentUpon>
       <Link>contact.aspx.designer.cs</Link>
     </Compile>
+    <Compile Include="contactus.aspx.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contactus.aspx.designer.cs">
+      <DependentUpon>contactus.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -138,7 +150,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <PropertyGroup>

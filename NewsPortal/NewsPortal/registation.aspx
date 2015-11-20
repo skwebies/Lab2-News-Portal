@@ -67,6 +67,8 @@
                 <td class="auto-style11">User Name:</td>
                 <td class="auto-style22">
                     <asp:TextBox ID="TextBoxUN" runat="server" Width="180px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="User name Required" ControlToValidate="TextBoxUN" Display="Dynamic" ForeColor="Red"></asp:RequiredFieldValidator>
+                    
                 </td>
                 <td class="auto-style14">&nbsp;</td>
             </tr>
@@ -74,6 +76,8 @@
                 <td class="auto-style23">E-Mail:</td>
                 <td class="auto-style24">
                     <asp:TextBox ID="TextBoxEmail" runat="server" Width="180px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="Email id Required" ControlToValidate="TextBoxEmail" ForeColor="Red"></asp:RequiredFieldValidator>
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TextBoxEmail" ErrorMessage="You must enter the valid email id" ForeColor="Red" ValidationExpression="\w+([-+.']\w+)*@\w+([-.]\w+)*\.\w+([-.]\w+)*"></asp:RegularExpressionValidator>
                 </td>
                 <td class="auto-style25">
                     <br />
@@ -83,6 +87,7 @@
                 <td class="auto-style11">Password:</td>
                 <td class="auto-style22">
                     <asp:TextBox ID="TextBoxPass" runat="server" TextMode="Password" Width="180px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="Password is Required" ControlToValidate="TextBoxPass" ForeColor="Red"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style14">&nbsp;</td>
             </tr>
@@ -90,6 +95,10 @@
                 <td class="auto-style16">Confirm Password:</td>
                 <td class="auto-style20">
                     <asp:TextBox ID="TextBoxRpass" runat="server" TextMode="Password" Width="180px"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="Confirm password Required" ControlToValidate="TextBoxRpass" ForeColor="Red"></asp:RequiredFieldValidator>
+                    
+                    <asp:CompareValidator ID="CompareValidator1" runat="server" ControlToCompare="TextBoxPass" ControlToValidate="TextBoxRpass" ErrorMessage="Both password must be same" ForeColor="Red"></asp:CompareValidator>
+                    
                 </td>
                 <td class="auto-style18">
                     <br />
@@ -99,12 +108,14 @@
                 <td class="auto-style11">Country</td>
                 <td class="auto-style22">
                     <asp:DropDownList ID="DropDownListCountry" runat="server" Width="180px">
+                        
                         <asp:ListItem>Select Country</asp:ListItem>
                         <asp:ListItem>USA</asp:ListItem>
                         <asp:ListItem>UK</asp:ListItem>
                         <asp:ListItem>SWEDEN</asp:ListItem>
                         <asp:ListItem>FINLAND</asp:ListItem>
                     </asp:DropDownList>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="Select country Required" ControlToValidate="DropDownListCountry" ForeColor="Red" InitialValue="Select Country"></asp:RequiredFieldValidator>
                 </td>
                 <td class="auto-style14">&nbsp;</td>
             </tr>
