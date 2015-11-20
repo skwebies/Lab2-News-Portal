@@ -66,12 +66,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\Registation.mdf" />
-    <Content Include="App_Data\Registation_log.ldf">
-      <DependentUpon>Registation.mdf</DependentUpon>
-    </Content>
-    <Content Include="contactus.aspx" />
+    <Content Include="admin.css" />
+    <Content Include="articles.aspx" />
+    <Content Include="Assets\globe.jpg" />
+    <Content Include="dashboard.aspx" />
     <Content Include="packages.config" />
+    <Content Include="Registration\Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -81,16 +83,17 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="about.aspx" />
-    <Content Include="..\..\..\..\..\Desktop\websida\labb2\contact.aspx">
-      <Link>contact.aspx</Link>
-    </Content>
+    <Content Include="contact.aspx" />
     <Content Include="Global.asax" />
     <Content Include="index.aspx" />
     <Content Include="login.aspx" />
     <Content Include="news.aspx" />
-    <Content Include="registation.aspx" />
+    <Content Include="Registration\register.aspx" />
     <Content Include="style.css" />
-    <Content Include="Web.config" />
+    <Content Include="Users.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="about.aspx.cs">
@@ -100,21 +103,26 @@
     <Compile Include="about.aspx.designer.cs">
       <DependentUpon>about.aspx</DependentUpon>
     </Compile>
-    <Compile Include="..\..\..\..\..\Desktop\websida\labb2\contact.aspx.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-      <Link>contact.aspx.cs</Link>
-    </Compile>
-    <Compile Include="..\..\..\..\..\Desktop\websida\labb2\contact.aspx.designer.cs">
-      <DependentUpon>contact.aspx</DependentUpon>
-      <Link>contact.aspx.designer.cs</Link>
-    </Compile>
-    <Compile Include="contactus.aspx.cs">
-      <DependentUpon>contactus.aspx</DependentUpon>
+    <Compile Include="articles.aspx.cs">
+      <DependentUpon>articles.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="contactus.aspx.designer.cs">
-      <DependentUpon>contactus.aspx</DependentUpon>
+    <Compile Include="articles.aspx.designer.cs">
+      <DependentUpon>articles.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="contact.aspx.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact.aspx.designer.cs">
+      <DependentUpon>contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="dashboard.aspx.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="dashboard.aspx.designer.cs">
+      <DependentUpon>dashboard.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -141,16 +149,23 @@
       <DependentUpon>news.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="registation.aspx.cs">
-      <DependentUpon>registation.aspx</DependentUpon>
+    <Compile Include="Registration\register.aspx.cs">
+      <DependentUpon>register.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="registation.aspx.designer.cs">
-      <DependentUpon>registation.aspx</DependentUpon>
+    <Compile Include="Registration\register.aspx.designer.cs">
+      <DependentUpon>register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Users.aspx.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Users.aspx.designer.cs">
+      <DependentUpon>Users.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Models\" />
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
