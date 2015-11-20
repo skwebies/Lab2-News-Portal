@@ -68,6 +68,7 @@
   <ItemGroup>
     <Content Include="admin.css" />
     <Content Include="articles.aspx" />
+    <Content Include="Assets\about.jpg" />
     <Content Include="Assets\globe.jpg" />
     <Content Include="dashboard.aspx" />
     <Content Include="packages.config" />

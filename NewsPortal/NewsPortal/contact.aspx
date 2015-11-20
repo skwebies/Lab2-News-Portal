@@ -26,7 +26,7 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">Entertainment</a></li>
-                    <li><a href="#">About Us</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
                     <li><a href="contact.aspx" class="selected">Contact Us</a></li>
                 </ul>
             </nav>

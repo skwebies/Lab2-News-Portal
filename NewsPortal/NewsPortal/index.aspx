@@ -25,8 +25,8 @@
                     <li><a href="#">News</a></li>
                     <li><a href="#">Videos</a></li>
                     <li><a href="#">Entertainment</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
+                    <li><a href="contact.aspx">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="slideshow">
