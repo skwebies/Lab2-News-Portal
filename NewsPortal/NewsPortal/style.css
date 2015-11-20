@@ -1,11 +1,12 @@
 ﻿body {
     background: #f1f1f1;
     font-family: 'source-sans-pro',sans-serif;
-    font-size: 13px;
+    font-size: 1em;
 }
 
 .container {
-    width: 960px;
+    max-width: 960px;
+    width:100%;
     /*background:white;*/
     margin: 0 auto;
     min-height: 600px;
@@ -13,13 +14,13 @@
 }
 
 #logo {
-    width:280px;
+    width:29.16%;
     margin:0 auto;
     text-align:center;
     margin-top:80px;
 }
 h1 {
-    font-size:36px;
+    font-size:1em;
     font-family: 'Exo', sans-serif;
     font-weight:bold;
     
@@ -41,7 +42,7 @@ h1 {
 
 #login {
     margin: 0 auto;
-    width: 300px;
+    width: 31.25%;
     position: relative;
     top: 30px;
     font-size: 14px;
@@ -59,7 +60,7 @@ h1 {
 .loginSets {
     margin: 0 auto 0 20px;
     display: block;
-    width: 245px;
+    width: 25.52%;
     font-family: 'source-sans-pro',sans-serif;
 }
 
@@ -134,6 +135,9 @@ border-top-right-radius:10px;
 
 nav ul {
     list-style-type:none;
+    width:80%;
+    display:block;
+    margin:0 auto;
 
 }
 nav ul li {
@@ -157,18 +161,22 @@ nav ul li a {
     color:#ff6a00;
 }
 
+.slideshow img {
+    width:100%;
+}
+
 .slideshow h1 {
 position:absolute;
 top:180px;
 margin-left:30px;
 background:rgba(255,255,255,0.4);
 padding:10px;
-width:400px;
+width:41.66%;
 
 }
 .main_content {
     float:left;
-    width:675px;
+    width:69.31%;
     min-height:500px;
     background:rgba(255,255,255,0.7);
     padding:10px;
@@ -177,7 +185,7 @@ width:400px;
 }
 .sidebar_left {
     float:right;
-    width:240px;
+    width:25%;
     background:rgba(255,255,255,0.7);
     min-height:500px;
     padding:10px;
@@ -226,4 +234,41 @@ footer {
 #lbtnLogin {
     text-decoration:none;
     color: #00b9ff;
+}
+
+@media (max-width:468px) and (max-width: 797px) 
+{
+   .container {
+       width:83.02%;
+   } 
+   .main_content {
+       width:60.31%;
+   }
+   .sidebar_left {
+       width:25%;
+   }
+   nav ul {
+       width:40%;
+   }
+
+
+}
+
+
+@media (max-width:468px)
+{
+   .container {
+       width:83.02%;
+   } 
+   .main_content {
+       width:60.31%;
+   }
+   .sidebar_left {
+       width:25%;
+   }
+   nav ul {
+       width:50%;
+   }
+
+
 }

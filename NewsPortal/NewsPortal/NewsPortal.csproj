@@ -68,8 +68,10 @@
   <ItemGroup>
     <Content Include="admin.css" />
     <Content Include="articles.aspx" />
+    <Content Include="Assets\news.jpg" />
     <Content Include="Assets\globe.jpg" />
     <Content Include="dashboard.aspx" />
+    <Content Include="entertainment.aspx" />
     <Content Include="packages.config" />
     <Content Include="Registration\Web.config">
       <SubType>Designer</SubType>
@@ -124,6 +126,13 @@
     </Compile>
     <Compile Include="dashboard.aspx.designer.cs">
       <DependentUpon>dashboard.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="entertainment.aspx.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="entertainment.aspx.designer.cs">
+      <DependentUpon>entertainment.aspx</DependentUpon>
     </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

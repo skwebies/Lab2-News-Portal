@@ -1,10 +1,10 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="news.aspx.cs" Inherits="NewsPortal.news" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="entertainment.aspx.cs" Inherits="NewsPortal.entertainment" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>News Portal - News</title>
+    <title>News Portal - Entertainment</title>
     <link rel="stylesheet" type="text/css" href="../style.css" />
     <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css' />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
@@ -31,9 +31,9 @@
             <nav>
                 <ul>
                     <li><a href="index.aspx" >Home</a></li>
-                    <li><a href="news.aspx" class="selected">News</a></li>
+                    <li><a href="news.aspx">News</a></li>
                     <li><a href="videos.aspx">Videos</a></li>
-                    <li><a href="entertainment.aspx">Entertainment</a></li>
+                    <li><a href="entertainment.aspx" class="selected">Entertainment</a></li>
                     <li><a href="about.aspx">About Us</a></li>
                     <li><a href="contact.aspx">Contact Us</a></li>
                 </ul>
@@ -44,7 +44,7 @@
                 <h1>Connecting News World by Media</h1>
             </div>
             <section class="contents">
-                <h2>News</h2>
+                <h2>Entertainment</h2>
                 <div class="main_content">
                     
                          

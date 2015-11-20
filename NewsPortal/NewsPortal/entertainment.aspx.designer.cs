@@ -10,7 +10,7 @@
 namespace NewsPortal {
     
     
-    public partial class news {
+    public partial class entertainment {
         
         /// <summary>
         /// frmHome control.

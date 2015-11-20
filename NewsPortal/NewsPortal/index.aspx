@@ -31,16 +31,16 @@
             <nav>
                 <ul>
                     <li><a href="index.aspx" class="selected">Home</a></li>
-                    <li><a href="#">News</a></li>
-                    <li><a href="#">Videos</a></li>
-                    <li><a href="#">Entertainment</a></li>
-                    <li><a href="#">About Us</a></li>
-                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="news.aspx">News</a></li>
+                    <li><a href="videos.aspx">Videos</a></li>
+                    <li><a href="entertainment.aspx">Entertainment</a></li>
+                    <li><a href="about.aspx">About Us</a></li>
+                    <li><a href="contact.aspx">Contact Us</a></li>
                 </ul>
             </nav>
             <div class="slideshow">
 
-                <img src="Assets/globe.jpg" alt="Global News" height="350" width="960"/>
+                <img src="Assets/globe.jpg" alt="Global News" height="350"/>
                 <h1>Connecting News World by Media</h1>
             </div>
             <section class="contents">
@@ -68,6 +68,12 @@
                    
                 </div>
                 <aside class="sidebar_left">
+                    <h3>Recent News</h3>
+                    <h5>Lorem ipsum dolor</h5>
+                    <p><img src="Assets/news.jpg" alt="News Image" width="130" /> ipsum dolor sit amet, in idque movet animal sit, has principes posidonium liberavisse no, vim an case graeco. Vix cetero omnesque adipiscing id. Insolens sensibus conceptam ius ei, ex vis delenit impedit habemus. Melius omnium eleifend sit at.</p>
+
+                    <h5>Lorem ipsum dolor</h5>
+                    <p><img src="Assets/news.jpg" alt="News Image" width="130" /><br /> ipsum dolor sit amet, in idque movet animal sit, has principes posidonium liberavisse no, vim an case graeco. Vix cetero omnesque adipiscing id. Insolens sensibus conceptam ius ei, ex vis delenit impedit habemus. Melius omnium eleifend sit at.</p>
 
                 </aside>
 
